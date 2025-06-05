@@ -13,6 +13,10 @@ import Greeting from './props/Greatting';
 import UserCard from './props/UserCard';
 import ParentButtonOne from './props/ParentButtonOne';
 import ParentIncrementButton from './props/ParentIncrementButton';
+import ParentInputNotifier from './props/ParentInputNotifier';
+import ParentUserList from './props/ParentUserList';
+import ParentLoginForm from './props/ParentLoginForm';
+import HoverFont from './useStates/Hoverfront';
 
 
 
@@ -40,6 +44,13 @@ function App() {
       <UserCard user={userData} />
       <ParentButtonOne />   
       <ParentIncrementButton/>
+      <br />
+      <ParentInputNotifier/>
+      <br />
+      <ParentUserList />
+      <br />
+      <ParentLoginForm/>
+      <HoverFont/>
 
     </>
   );
