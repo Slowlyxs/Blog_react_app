@@ -42,12 +42,26 @@ import FocoAutomatico from './useRef/FocoAutomatico';
 import MoverCaja from './useRef/MoverCaja';
 import ReproductorSonido from './useRef/ReproductorSonido';
 import ScrollDemo from './useRef/ScrollDemo';
-
+import Contador from './useCallback/Contador';
+import PadreCallback from './useCallback/PadreCallback';
+import SaludoCallback from './useCallback/SaludoCallback';
+import ListaCallback from './useCallback/ListaCallback';
+import ContadorReducer from './useReducer/ContadorReducer';
+import FormularioReducer from './useReducer/FormularioReducer';
+import ListaReducer from './useReducer/ListaReducer';
+import CarritoReducer from './useReducer/CarritoReducer';
+import FormStep from './useReducer/FormStep';
+import ExpensiveCalc from './useMemo/ExpensiveCalc';
+import FiltroLista from './useMemo/Filtrolista';
+import TablaOrdenada from './useMemo/TablaOrdenada';
+import PrimosMemo from './useMemo/Primosmemos';
+import ContadorLetras from './useMemo/Contadorletras';
 
 
 
 
 function App() {
+  const elementos = ["uno", "dos", "tres", "cuatro"];
   const userData = { name: "Carlos", age: 30 };
 
   return (
@@ -131,6 +145,34 @@ function App() {
       <ReproductorSonido/>
       <br />
       <ScrollDemo/>
+      <Contador/>
+      <br />
+      <PadreCallback/>
+      <br />
+      <SaludoCallback/>
+      <h2>Ejemplo de Lista</h2>
+      <ListaCallback items={elementos} />
+      <br />
+      <ContadorReducer/>
+      <br />
+      <FormularioReducer/>
+      <br />
+      <ListaReducer/>
+      <br />
+      <CarritoReducer/>
+      <br />
+      <FormStep />
+      <h1> Uso del memo </h1>
+      <ExpensiveCalc/>
+      <br />
+      <FiltroLista/>
+      <br />
+      <TablaOrdenada/>
+      <br />
+      <PrimosMemo/>
+      <br />
+      <ContadorLetras/>
+      
     
 
       </>
