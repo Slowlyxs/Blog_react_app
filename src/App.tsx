@@ -56,6 +56,13 @@ import FiltroLista from './useMemo/Filtrolista';
 import TablaOrdenada from './useMemo/TablaOrdenada';
 import PrimosMemo from './useMemo/Primosmemos';
 import ContadorLetras from './useMemo/Contadorletras';
+import { CentradoVerticalTS } from './useLayoutEffect/CentradoVerticalTS';
+import MedicionCaja from './useLayoutEffect/MedicionCaja';
+import MostrarSinParpadeoTS from './useLayoutEffect/MostrarSinParpadeoTS';
+import { ScrollAutoTS } from './useLayoutEffect/ScrollAuto';
+import AppRoutes from './AppRoutes';
+import { Link } from 'react-router-dom';
+
 
 
 
@@ -66,6 +73,19 @@ function App() {
 
   return (
     <>
+      <nav style={{ display: 'flex', gap: '1rem', padding: '1rem', background: '#21262d' }}>
+        <Link to="/">Inicio</Link>
+        <Link to="/about">Acerca de</Link>
+        <Link to="/productos">Productos</Link>
+        <Link to="/contacto">Contacto</Link>
+        <Link to="/useEffect/IndexuseContext">UseEffect</Link>
+        <Link to="/formulario/FormularioBasico">Formulario Basico</Link>
+        <Link to="/formulario/FormularioRHF">Formulario RHF</Link>
+        <Link to="/formulario/FormularioZod">Formulario Zod</Link>
+      </nav>
+
+      <AppRoutes />
+
       <HelloWorld/>
       <WelcomeUser/>
       <ButtonCounter/>
@@ -172,9 +192,14 @@ function App() {
       <PrimosMemo/>
       <br />
       <ContadorLetras/>
+      <br />
+      <CentradoVerticalTS/>
+      <br />
+      <MedicionCaja/>
+      <MostrarSinParpadeoTS/>
+      <ScrollAutoTS/>
       
     
-
       </>
   );
 }
