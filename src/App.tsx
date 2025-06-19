@@ -62,6 +62,23 @@ import MostrarSinParpadeoTS from './useLayoutEffect/MostrarSinParpadeoTS';
 import { ScrollAutoTS } from './useLayoutEffect/ScrollAuto';
 import AppRoutes from './AppRoutes';
 import { Link } from 'react-router-dom';
+import { ButtonCss } from './css/ButtonCss';
+import { ButtonStyled } from './css/ButtonStyled';
+import { ButtonEmotion } from './css/ButtomEmotion';
+import ThemedComponent from './css/ThemedComponent';
+import { ThemeProvider } from './css/ThemeProvider';
+import { BootstrapButton } from './bootstrap/ButtonBootstrap';
+import { BootstrapAlert } from './bootstrap/Alerta';
+import { BootstrapCard } from './bootstrap/BootstrapCard';
+import { BootstrapForm } from './bootstrap/BootstrapForm';
+import BasicExample from './bootstrap/BasicExample';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import VariantsExample from './bootstrap/Variantsexample';
+import { ButtonTailwind } from './tailwind/ButtonTailwind';
+import { InputTailwind } from './tailwind/InputTailwind';
+import { CardTailwind } from './tailwind/CartTailwind';
+import { AlertaTailwind } from './tailwind/AlertaTailwind';
+import { TablaTailwind } from './tailwind/TablaTailwind';
 
 
 
@@ -198,6 +215,34 @@ function App() {
       <MedicionCaja/>
       <MostrarSinParpadeoTS/>
       <ScrollAutoTS/>
+      <br />
+      <ButtonCss/>
+      <ButtonStyled/>
+      <ButtonEmotion/>
+      <br />
+      <ThemeProvider>
+        <ThemedComponent/>
+      </ThemeProvider>
+      <br />
+      <BootstrapButton/>
+      <BootstrapAlert/>
+      <BootstrapCard/>
+      <BootstrapForm/>
+      <h1> Ejemplos </h1>
+      <BasicExample/>
+      <VariantsExample/>
+      <h1> Tail Wind </h1>
+      <ButtonTailwind/>
+      <InputTailwind/>
+      <CardTailwind/>
+      <AlertaTailwind/>
+      <TablaTailwind/>
+
+
+  
+
+      
+
       
     
       </>

@@ -4,7 +4,7 @@ import About from './pages/About';
 import Productos from './pages/Productos';
 import Contacto from './pages/Contacto';
 import IndexuseContext from './useEffect';
-import FormularioBasico from './formulario/formulariobasico';
+import FormularioBasico from './formulario/FormularioBasico';
 import FormularioRHF from './formulario/FormularioRHF';
 import FormularioZod from './formulario/FormularioZod';
 
