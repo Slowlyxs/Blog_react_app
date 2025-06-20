@@ -79,6 +79,12 @@ import { InputTailwind } from './tailwind/InputTailwind';
 import { CardTailwind } from './tailwind/CartTailwind';
 import { AlertaTailwind } from './tailwind/AlertaTailwind';
 import { TablaTailwind } from './tailwind/TablaTailwind';
+import { DaisyButton } from './daisy-ui/DaisyButton';
+import { DaisyCard } from './daisy-ui/DaisyCard';
+import { DaisyModal } from './daisy-ui/DaisyModal';
+import { DaisyBarras } from './daisy-ui/DaisyBarras';
+import { Daisycalificación } from './daisy-ui/Daisycalificación';
+import { Daisytelefono } from './daisy-ui/DaisyTelefono';
 
 
 
@@ -237,6 +243,17 @@ function App() {
       <CardTailwind/>
       <AlertaTailwind/>
       <TablaTailwind/>
+      <h1>DAISY</h1>
+      <DaisyButton/>
+      <DaisyCard/>
+      <DaisyModal/>
+      <br />
+      <DaisyBarras/>
+      <br />
+      <Daisycalificación/>
+      <br />
+      <Daisytelefono/>
+    
 
 
   
